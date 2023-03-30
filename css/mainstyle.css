@@ -1,0 +1,137 @@
+/*顶部图片样式*/
+#head img{
+    width: 70vw;
+    height: auto ;
+    margin-left: 80px;
+}
+/*网页标题样式*/
+#title{
+    height: 60px;
+    line-height: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: 240;
+    text-align: center;
+    color: rgb(162, 209, 169);
+}
+/*清除原样式*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*一级菜单样式*/
+#nav {
+    width: auto;
+    height: 40px;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    background: rgb(145, 182, 145);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+    #nav ul li {
+        float: left;
+        /*包含块*/
+        position:relative;
+    }
+
+        #nav ul li a {
+            display: block;
+            width: 280px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+            #nav ul li a:hover {
+                color: white;
+                background: rgb(162, 209, 169);
+            }
+/*二级菜单样式*/
+        #nav ul li ul {
+        position:absolute;
+        top:40px;
+        left:0px;
+        display:none;
+        }
+            #nav ul li ul li {
+            float:none;
+            }
+            #nav ul li ul li a{
+                background:rgb(214, 234, 217); 
+                border-top:1px solid #ccc;
+                color: rgb(162, 209, 169);
+            }
+            /*一级菜单悬停时二级菜单可见*/
+        #nav ul li:hover ul {
+        display:block;
+        }
+/*正文样式*/
+
+#bg{
+    background-image: url(M.jpg);
+    min-height: 1800px;
+    width: auto;
+    background-size: cover;
+}
+#bg img{
+    width: 80vw;
+    height: auto;
+    vertical-align: middle;
+    margin-left:145px;
+    display: flex;
+    margin-bottom:30px ;
+    border-radius: 7px;
+    margin:0 auto;
+
+}
+
+#content{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 40px;
+    margin-top: 22px;
+    padding-left: 38px;
+    padding-right: 40px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    line-height:33px ;
+    color: rgb(117, 158, 117);
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: #fff;
+}
+#content p{
+    font-weight: 580;
+}
+
+    
+	
+
+/*底部版权所有样式*/
+#footer{
+    text-align: center;
+    height: 44px;
+    line-height: 42px;
+    font-family: 微软雅黑;
+    background-color: rgb(145, 182, 145);
+    color: white;
+    
+}
+
+
